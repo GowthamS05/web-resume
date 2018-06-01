@@ -1,0 +1,25 @@
+<div class="animated  fadeIn ">
+    <div *ngFor="let charts of skillObject">
+        <h5>{{charts.skillHeader}}</h5>
+        <br/>
+        <table width=100%>
+            <tbody width=100%>
+                <tr width=100% *ngFor="let chart of charts.skillTypes">
+                    <td width=20%><span>{{chart.chartLabel}}</span></td>
+                    <td width=70%>
+                        <div class="chartHoriz">
+                            <div class="barChart" [style.animationDelay]="chart.animationDelay" [style.width]="chart.chartWidth + '%'">
+                            </div>
+                        </div>
+                    </td>
+                    <td width=10%>
+                        <div class="fadePercentage">
+                            <span [style.animationDelay]="chart.animationDelay">{{chart.chartWidth}} %</span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br/>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="animated  fadeIn">
+    <h5>Strength</h5>
+    <div class="container-fluid">
+        <ul class="fadePercentage">
+            <li *ngFor="let strength of strengthObject" [style.animationDelay]="strength.animation">{{strength.desc}}</li>
+        </ul>
+    </div>
+    <h5>Achievements</h5>
+    <div class="container-fluid">
+        <ul class="fadePercentage">
+            <li *ngFor="let achievement of achievements" [style.animationDelay]="achievement.animation">{{achievement.desc}}</li>
+        </ul>
+    </div>
+</div>

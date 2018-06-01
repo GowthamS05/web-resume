@@ -1,0 +1,49 @@
+<div class="animated  fadeIn ">
+    <div class="form-group row">
+        <label for="example-text-input" class="col-3 col-form-label">Age :</label>
+        <div class="col-9 fadePercentage">
+            <input type="text" readonly class="form-control-plaintext" id="staticEmail" [(ngModel)]="aboutObject.age">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-text-input" class="col-3 col-form-label">Years Of Experience :</label>
+        <div class="col-9 fadePercentage">
+            <input type="text" readonly class="form-control-plaintext" id="staticEmail" [(ngModel)]="aboutObject.yearsOfExperiance">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-text-input" class="col-3 col-form-label">Address :</label>
+        <div class="col-9 fadePercentage">
+            <input type="text" readonly class="form-control-plaintext" id="staticEmail" [(ngModel)]="aboutObject.address">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-text-input" class="col-3 col-form-label">Email :</label>
+        <div class="col-9 fadePercentage">
+            <input type="text" readonly class="form-control-plaintext" id="staticEmail" [(ngModel)]="aboutObject.email">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-text-input" class="col-3 col-form-label">Phone Number :</label>
+        <div class="col-9 fadePercentage">
+            <input type="text" readonly class="form-control-plaintext" id="staticEmail" [(ngModel)]="aboutObject.phoneNumber">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-text-input" class="col-3 col-form-label">Blogs :</label>
+        <div class="col-9 fadePercentage">
+            <input type="text" readonly class="form-control-plaintext" id="staticEmail" [(ngModel)]="aboutObject.blogs">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-text-input" class="col-3 col-form-label">Education Details :</label>
+        <div class="col-9 ">
+            <ul class="noPadding fadePercentage">
+                <li *ngFor="let eduDetails of aboutObject.educationDetails">
+                    {{eduDetails}}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
