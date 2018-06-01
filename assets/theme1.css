@@ -1,0 +1,77 @@
+body {
+    color: #212121;
+}
+
+.gradientBackground {
+    background: #5E35B1;
+    background: linear-gradient(#5E35B1, #FAFAFA);
+}
+
+.parentContainer {
+    background-color: #FAFAFA;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+.author,
+.category,
+nav ul li a {
+    color: #F5F5F5;
+}
+
+.footerInfo {
+    background: #5E35B1;
+}
+
+.nav ul li a:hover {
+    color: #555;
+}
+
+li.active.current>a {
+    background: #B39DDB;
+}
+
+nav.shift ul li a:after {
+    color: transparent;
+    background: #B39DDB;
+}
+
+nav.shift ul li a:hover {
+    color: #FFF;
+}
+
+.nameColor {
+    color: #3F51B5;
+}
+
+.fa-google-plus {
+    color: #d34836;
+}
+
+.fa-twitter {
+    color: #00aced
+}
+
+.fa-instagram {
+    color: #8a3ab9
+}
+
+.fa-stack-overflow {
+    color: #f48024;
+}
+
+.fa-github {
+    color: #000;
+}
+
+.userInfo::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 100px;
+}
+
+.userInfo::-webkit-scrollbar-thumb {
+    background-color: #5E35B1;
+    outline: 1px solid slategrey;
+    border-radius: 100px;
+}
